@@ -206,7 +206,7 @@ p { margin: 0; }
   width: 12rem;
   height: 3.25rem;
   transform: translateX(-50%);
-  background: url("assets/figma/ornament-button-glow.svg") center / contain no-repeat;
+  background: url("assets/ornaments/ornament-button-glow.svg") center / contain no-repeat;
   pointer-events: none;
   z-index: -1;
 }
@@ -520,8 +520,6 @@ section[id], footer[id], .video-block[id] { scroll-margin-top: 1.25rem; }
   background: var(--tile);
 }
 .tech-icon > img { width: 90px; }
-.tech-icon-stack { position: relative; width: 90px; height: 90px; }
-.tech-icon-stack img { position: absolute; }
 
 @media (min-width: 1024px) {
   .tech-grid { grid-template-columns: repeat(2, 1fr); }

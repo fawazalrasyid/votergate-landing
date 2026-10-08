@@ -295,6 +295,33 @@ section[id], footer[id], .video-block[id] { scroll-margin-top: 1.25rem; }
 /* Intro */
 .intro-inner { text-align: center; max-width: 60rem; }
 .intro p { margin-top: 1.5rem; color: var(--white); }
+.intro p + p { margin-top: 1rem; color: var(--text); }
+.intro-main { margin-top: 2.5rem; }
+.intro-copy p:first-child { margin-top: 0; }
+.press { margin-top: 3rem; }
+.press-label {
+  margin-top: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.press-logos {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem 2.75rem;
+}
+.press-logos a {
+  text-decoration: none;
+  opacity: 0.55;
+  transition: opacity 0.2s ease;
+}
+.press-logos a:hover, .press-logos a:focus-visible { opacity: 1; }
+.press-logos img { height: 32px; width: auto; display: block; }
 
 /* Feature cards */
 #fitur { position: relative; overflow: clip; }

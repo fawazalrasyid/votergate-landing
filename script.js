@@ -1,5 +1,5 @@
 // VoterGate landing: mobile nav toggle, FAQ accordion, dynamic footer year.
-// Placeholder CTAs (Unduh) anchor to #unduh until real download links exist.
+// CTA buttons point to the Tally waitlist form until official download links exist.
 
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.getElementById("nav-menu");

@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VoterGate | Modern Voting with High Security and Flexibility</title>
+<meta name="description" content="VoterGate menghadirkan voting online yang aman dan fleksibel dengan blockchain terdesentralisasi, verifikasi biometrik, SHA-256, dan penyimpanan IPFS.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://votergate.id/">
+<meta name="theme-color" content="#01164D">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VoterGate">
+<meta property="og:title" content="VoterGate | Modern Voting with High Security and Flexibility">
+<meta property="og:description" content="VoterGate menghadirkan voting online yang aman dan fleksibel dengan blockchain terdesentralisasi, verifikasi biometrik, SHA-256, dan penyimpanan IPFS.">
+<meta property="og:url" content="https://votergate.id/">
+<meta property="og:image" content="https://votergate.id/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="VoterGate — Modern Voting with High Security and Flexibility">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VoterGate | Modern Voting with High Security and Flexibility">
+<meta name="twitter:description" content="VoterGate menghadirkan voting online yang aman dan fleksibel dengan blockchain terdesentralisasi, verifikasi biometrik, SHA-256, dan penyimpanan IPFS.">
+<meta name="twitter:image" content="https://votergate.id/assets/og-image.png">
+<meta name="twitter:image:alt" content="VoterGate — Modern Voting with High Security and Flexibility">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://votergate.id/#organization",
+      "name": "VoterGate",
+      "url": "https://votergate.id/",
+      "logo": "https://votergate.id/assets/logo-full.png"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://votergate.id/#website",
+      "name": "VoterGate",
+      "url": "https://votergate.id/",
+      "inLanguage": "id-ID",
+      "publisher": {
+        "@id": "https://votergate.id/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://votergate.id/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Bagaimana proses voting dengan Votergate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kamu membuat atau memilih Voting Room di aplikasi, melakukan verifikasi biometrik, lalu memberikan suara. Suara di-hashing dengan SHA-256 dan tersimpan di blockchain serta IPFS, sehingga tidak bisa dimanipulasi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bagaimana Votergate menghitung hasil voting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Hasil dihitung dari data suara yang tersimpan di ledger blockchain. Ledger tersebut dapat diakses siapa saja dan data yang sudah tersimpan tidak dapat diubah, bahkan oleh Votergate, sehingga hasil yang tampil sesuai dengan suara yang tercatat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bagaimana Votergate mengamankan hasil suara?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sebelum dikirim ke blockchain, data suara di-hashing dengan SHA-256 sehingga isinya tidak dapat dibaca pihak lain. Verifikasi biometrik memastikan suara tidak diwakilkan, dan penyimpanan IPFS menjaga data dari kerusakan dan manipulasi."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Apakah Votergate berbayar?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Votergate saat ini dapat diakses melalui versi demo. Unduh aplikasinya untuk mencoba langsung dan memberikan feedback."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<link rel="icon" type="image/png" href="assets/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Encode+Sans+Expanded:wght@600;700&family=Plus+Jakarta+Sans:wght@500&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<img class="page-bg" src="assets/figma/bg-gradient.svg" alt="" aria-hidden="true" decoding="async">
+<a class="skip-link" href="#konten">Lewati ke konten</a>
+
+<header class="site-header" id="beranda">
+  <div class="container nav-wrap">
+    <a class="brand" href="#beranda" aria-label="VoterGate, kembali ke atas">
+      <img src="assets/logo-full.png" alt="VoterGate" width="277" height="172" decoding="async">
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      Menu
+    </button>
+    <nav class="nav" aria-label="Navigasi utama">
+      <ul class="nav-list" id="nav-menu">
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#fitur">Fitur</a></li>
+        <li><a href="#benefit">Benefit</a></li>
+        <li><a href="#teknologi">Teknologi</a></li>
+        <li><a href="#cara-kerja">Cara Kerja</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a class="nav-cta" href="mailto:halo@votergate.id">Hubungi Kami</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="konten">
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="ornament ornament--hero-a" src="assets/figma/ornament-hero-wave-1.svg" alt="" aria-hidden="true" decoding="async">
+    <img class="ornament ornament--hero-b" src="assets/figma/ornament-hero-wave-2.svg" alt="" aria-hidden="true" decoding="async">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Modern <span class="grad-text">Voting</span><br>with High Security and Flexibility</h1>
+        <p>Dengan Votergate voting di mana pun tanpa ada kecurangan dan <em>human error</em> di dalam demokrasi. Dengan menggunakan teknologi blockchain yang terdesentralisasi dan transparan.</p>
+        <a class="btn btn-primary" href="#unduh">Unduh Sekarang</a>
+      </div>
+      <figure class="hero-visual">
+        <img src="assets/figma/hero-circuit.png" alt="Visual sirkuit digital VoterGate" width="1024" height="677" decoding="async">
+      </figure>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section class="section intro" id="tentang">
+    <div class="container intro-inner">
+      <h2 class="grad-text">VoterGate</h2>
+      <p>Aplikasi berbasis teknologi blockchain dengan sistem yang tidak terpusat dan menjamin keamanan data terutama data suara dan data pengguna, kami menjaga informasi, menjamin integritas data, keamanan dan mengeliminasi kemungkinan bocornya suatu informasi.</p>
+    </div>
+  </section>
+
+  <!-- FITUR -->
+  <section class="section" id="fitur">
+    <img class="ornament ornament--fitur" src="assets/figma/ornament-fitur-glow.svg" alt="" aria-hidden="true" decoding="async" loading="lazy">
+    <div class="container">
+      <div class="card-row">
+        <article class="feature-card">
+          <div class="feature-card-body">
+            <h3 class="badge">Voting Room</h3>
+            <p>Membuat dan memilih Voting Room dengan mudah. Dari alur voting yang panjang, sekarang bisa kamu lakukan dalam satu genggaman.</p>
+          </div>
+          <div class="feature-shot">
+            <img src="assets/figma/feature-voting-room.png" alt="Tampilan Voting Room di aplikasi VoterGate" width="633" height="1281" loading="lazy" decoding="async">
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card-body">
+            <h3 class="badge">Voter Space</h3>
+            <p>Memusatkan segala informasi dari sumber-sumber yang kredibel, hal ini juga mencegah kamu mengurangi risiko informasi hoax.</p>
+          </div>
+          <div class="feature-shot">
+            <img src="assets/figma/feature-voter-space.png" alt="Tampilan Voter Space di aplikasi VoterGate" width="633" height="1281" loading="lazy" decoding="async">
+          </div>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card-body">
+            <h3 class="badge">Voter Assist</h3>
+            <p>Tempat pengaduan atau bertanya mengenai proses vote dari setiap Voting Room. Berinteraksi dengan Smartchat, atau guide book.</p>
+          </div>
+          <div class="feature-shot">
+            <img src="assets/figma/feature-voter-assist.png" alt="Tampilan Voter Assist di aplikasi VoterGate" width="1898" height="3843" loading="lazy" decoding="async">
+          </div>
+        </article>
+      </div>
+
+      <hr class="fitur-divider" aria-hidden="true">
+
+      <div class="card-row card-row--wide">
+        <article class="wide-card">
+          <div class="wide-card-head">
+            <span class="mini-icon" aria-hidden="true"><span class="bars"><i></i><i></i><i></i></span></span>
+            <h3>Report &amp; Analytic</h3>
+          </div>
+          <p>Data vote dapat diekspor ke dalam bentuk data laporan dan analisis untuk keperluan traction dan validitas pemilihan suara tersebut yang simpel maupun mendalam.</p>
+        </article>
+        <article class="wide-card">
+          <div class="wide-card-head">
+            <span class="mini-icon" aria-hidden="true"><img src="assets/figma/feature-monetize-chart.svg" alt="" width="21" height="26" decoding="async" loading="lazy"></span>
+            <h3>Monetize your vote</h3>
+          </div>
+          <p>Dapatkan uang dengan jadi relawan untuk menyaring berita hoax, selain itu berikan edukasi pengguna lainnya dengan membantu dan mengarahkan mereka melakukan voting sesuai prosedur.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFIT / KENAPA -->
+  <section class="section" id="benefit">
+    <img class="ornament ornament--band" src="assets/figma/ornament-section-glow.svg" alt="" aria-hidden="true" decoding="async" loading="lazy">
+    <div class="container benefit-grid">
+      <h2>Kenapa <span class="grad-text">VoterGate</span> dibanding Konvensional?</h2>
+      <ul class="benefit-list">
+        <li class="chip">
+          <img src="assets/figma/benefit-kenyamanan.svg" alt="" width="80" height="80" loading="lazy" decoding="async">
+          <span>Kenyamanan</span>
+        </li>
+        <li class="chip">
+          <img src="assets/figma/benefit-cost-saving.svg" alt="" width="80" height="80" loading="lazy" decoding="async">
+          <span>Cost Saving</span>
+        </li>
+        <li class="chip">
+          <img src="assets/figma/benefit-ketepatan.svg" alt="" width="69" height="60" loading="lazy" decoding="async">
+          <span>Ketepatan</span>
+        </li>
+        <li class="chip">
+          <img src="assets/figma/benefit-keamanan-data.svg" alt="" width="64" height="64" loading="lazy" decoding="async">
+          <span>Keamanan Data</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TEKNOLOGI / KEAMANAN -->
+  <section class="section security" id="teknologi">
+    <img class="security-watermark" src="assets/figma/watermark-logo.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">
+    <img class="ornament ornament--band ornament--band-tech" src="assets/figma/ornament-section-glow.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">
+    <img class="ornament ornament--tech-ellipse" src="assets/figma/ornament-tech-glow.svg" alt="" aria-hidden="true" loading="lazy" decoding="async">
+    <img class="ornament ornament--techbg" src="assets/figma/tech-bg.png" alt="" aria-hidden="true" loading="lazy" decoding="async">
+    <div class="container">
+      <div class="section-head">
+        <h2><span class="grad-text">Keamanan &amp; Kepercayaan</span> adalah yang Utama</h2>
+        <p>Untuk menjamin demokrasi yang aman dan dapat dipercaya kami menggunakan pendekatan sebagai berikut</p>
+      </div>
+      <div class="tech-grid">
+        <article class="tech-item">
+          <div class="tech-icon" style="--tile:#6bafff">
+            <span class="tech-icon-stack" aria-hidden="true">
+              <img src="assets/figma/tech-biometric-01.svg" alt="" style="left:0;top:0;width:100%;height:100%" decoding="async" loading="lazy">
+              <img src="assets/figma/tech-biometric-02.svg" alt="" style="left:0;top:0;width:100%;height:100%" decoding="async" loading="lazy">
+              <img src="assets/figma/tech-biometric-03.svg" alt="" style="left:12.47%;top:44.54%;width:75.06%;height:20.31%" decoding="async" loading="lazy">
+              <img src="assets/figma/tech-biometric-04.svg" alt="" style="left:19.97%;top:17.48%;width:60.06%;height:75.46%" decoding="async" loading="lazy">
+              <img src="assets/figma/tech-biometric-05.svg" alt="" style="left:32.32%;top:54.55%;width:35.35%;height:10.97%" decoding="async" loading="lazy">
+              <img src="assets/figma/tech-biometric-06.svg" alt="" style="left:9.12%;top:7.06%;width:81.77%;height:46.76%" decoding="async" loading="lazy">
+              <img src="assets/figma/tech-biometric-07.svg" alt="" style="left:62.64%;top:80.78%;width:29.64%;height:9.59%" decoding="async" loading="lazy">
+              <img src="assets/figma/tech-biometric-08.svg" alt="" style="left:12.05%;top:41.57%;width:78.67%;height:34.25%" decoding="async" loading="lazy">
+              <img src="assets/figma/tech-biometric-09.svg" alt="" style="left:0;top:39.05%;width:100%;height:4.49%" decoding="async" loading="lazy">
+              <img src="assets/figma/tech-biometric-10.svg" alt="" style="left:0;top:62.78%;width:35.63%;height:16.43%" decoding="async" loading="lazy">
+              <img src="assets/figma/tech-biometric-11.svg" alt="" style="left:77.85%;top:81.28%;width:13.91%;height:3.72%" decoding="async" loading="lazy">
+            </span>
+          </div>
+          <div>
+            <h3>Biometric Verification</h3>
+            <p>Votergate menggunakan verifikasi biometrik berupa sidik jari atau deteksi wajah yang terkoneksi dengan handphone pengguna dengan privasi data yang dipastikan terjaga, untuk memastikan pemilihan tidak diwakilkan.</p>
+          </div>
+        </article>
+        <article class="tech-item">
+          <div class="tech-icon" style="--tile:#9ff4ff">
+            <img src="assets/figma/tech-ipfs.png" alt="" width="1024" height="1024" loading="lazy" decoding="async">
+          </div>
+          <div>
+            <h3>IPFS as Decentralized Storage</h3>
+            <p>IPFS (InterPlanetary File System) memungkinkan tidak ada data yang bisa dimanipulasi dan dipastikan semua data tidak mengalami kerusakan. Bahkan Votergate tidak dapat memodifikasi data yang ada.</p>
+          </div>
+        </article>
+        <article class="tech-item">
+          <div class="tech-icon" style="--tile:#a79fff">
+            <img src="assets/figma/tech-secure-hash.svg" alt="" loading="lazy" width="90" height="90" decoding="async">
+          </div>
+          <div>
+            <h3>Secure Hash Algorithm</h3>
+            <p>Sebelum data dikirim ke blockchain, data akan terlebih dahulu di-hashing dengan SHA-256, walaupun data dapat diakses secara publik, tetap tidak ada yang tahu isi data tersebut kecuali disamakan dengan data aslinya.</p>
+          </div>
+        </article>
+        <article class="tech-item">
+          <div class="tech-icon" style="--tile:#ffcd9f">
+            <img src="assets/figma/tech-blockchain.svg" alt="" loading="lazy" width="90" height="90" decoding="async">
+          </div>
+          <div>
+            <h3>Blockchain as Decentralized DB</h3>
+            <p>Blockchain adalah solusi untuk melindungi data tersebut, dengan transaksi yang satu arah, memiliki nilai ID yang unik, dan ledger yang dapat diakses siapa saja. Data voting akan tetap orisinal, rahasia dan transparan.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="tagline grad-text">Your vote is yours.<br>No one has access, even us.</p>
+
+      <!-- CARA KERJA -->
+      <div class="video-block" id="cara-kerja">
+        <h2 class="sr-only">Cara Kerja</h2>
+        <!-- Video resmi VoterGate (YouTube nT6qZLF5uGA) -->
+        <div class="video-embed">
+          <iframe src="https://www.youtube-nocookie.com/embed/nT6qZLF5uGA" title="Video Cara Kerja VoterGate" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="container faq-grid">
+      <div class="faq-intro">
+        <p class="faq-label">
+          <img src="assets/figma/ornament-faq-glow.svg" alt="" width="40" height="40" decoding="async" loading="lazy">
+          FAQ
+        </p>
+        <h2>Pertanyaan yang Sering Ditanyakan</h2>
+      </div>
+      <div class="accordion">
+        <div class="accordion-item">
+          <h3>
+            <button type="button" aria-expanded="false" aria-controls="faq-panel-1" id="faq-button-1">
+              <span>Bagaimana proses voting dengan Votergate?</span>
+              <img class="chevron" src="assets/figma/icon-chevron-down.svg" alt="" width="40" height="40" decoding="async" loading="lazy">
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-panel-1" role="region" aria-labelledby="faq-button-1" hidden>
+            <p>Kamu membuat atau memilih Voting Room di aplikasi, melakukan verifikasi biometrik, lalu memberikan suara. Suara di-hashing dengan SHA-256 dan tersimpan di blockchain serta IPFS, sehingga tidak bisa dimanipulasi.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3>
+            <button type="button" aria-expanded="false" aria-controls="faq-panel-2" id="faq-button-2">
+              <span>Bagaimana Votergate menghitung hasil voting?</span>
+              <img class="chevron" src="assets/figma/icon-chevron-down.svg" alt="" width="40" height="40" decoding="async" loading="lazy">
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-panel-2" role="region" aria-labelledby="faq-button-2" hidden>
+            <p>Hasil dihitung dari data suara yang tersimpan di ledger blockchain. Ledger tersebut dapat diakses siapa saja dan data yang sudah tersimpan tidak dapat diubah, bahkan oleh Votergate, sehingga hasil yang tampil sesuai dengan suara yang tercatat.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3>
+            <button type="button" aria-expanded="false" aria-controls="faq-panel-3" id="faq-button-3">
+              <span>Bagaimana Votergate mengamankan hasil suara?</span>
+              <img class="chevron" src="assets/figma/icon-chevron-down.svg" alt="" width="40" height="40" decoding="async" loading="lazy">
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-panel-3" role="region" aria-labelledby="faq-button-3" hidden>
+            <p>Sebelum dikirim ke blockchain, data suara di-hashing dengan SHA-256 sehingga isinya tidak dapat dibaca pihak lain. Verifikasi biometrik memastikan suara tidak diwakilkan, dan penyimpanan IPFS menjaga data dari kerusakan dan manipulasi.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3>
+            <button type="button" aria-expanded="false" aria-controls="faq-panel-4" id="faq-button-4">
+              <span>Apakah Votergate berbayar?</span>
+              <img class="chevron" src="assets/figma/icon-chevron-down.svg" alt="" width="40" height="40" decoding="async" loading="lazy">
+            </button>
+          </h3>
+          <div class="accordion-panel" id="faq-panel-4" role="region" aria-labelledby="faq-button-4" hidden>
+            <p>Votergate saat ini dapat diakses melalui versi demo. Unduh aplikasinya untuk mencoba langsung dan memberikan feedback.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA UNDUH -->
+  <section class="cta" id="unduh">
+    <div class="container cta-grid">
+      <div class="cta-copy">
+        <h2>Voting Sekarang!</h2>
+        <p>Jadilah orang yang pertama yang mengakses versi demo Votergate dan berikan feedback langsung!</p>
+        <!-- TODO: ganti href dengan link unduhan aplikasi asli -->
+        <a class="btn btn-primary" href="#unduh" data-placeholder-link>Unduh Aplikasi</a>
+      </div>
+      <div class="cta-phones" aria-hidden="true">
+        <img src="assets/cta-phones.png" alt="" width="1422" height="783" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="hubungi-kami">
+  <div class="container">
+    <div class="footer-legal">
+      <img src="assets/figma/icon-copyright.svg" alt="" width="24" height="24" decoding="async" loading="lazy">
+      <p><span id="year">2026</span> VoterGate. All right reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -316,7 +316,7 @@ section[id], footer[id], .video-block[id] { scroll-margin-top: 1.25rem; }
   border: 2px solid var(--muted);
   border-radius: 20px;
   background: linear-gradient(160deg, rgba(255, 255, 255, 0) 2%, rgba(255, 255, 255, 0.13) 137%);
-  padding: 2rem 1.75rem 0;
+  padding: 2rem 1.75rem 1.75rem;
   text-align: center;
   overflow: hidden;
 }
@@ -417,7 +417,7 @@ section[id], footer[id], .video-block[id] { scroll-margin-top: 1.25rem; }
     grid-column: auto;
     flex-direction: column;
     text-align: center;
-    padding: 2rem 1.75rem 0;
+    padding: 2rem 1.75rem 1.75rem;
   }
   .feature-card:last-child .feature-shot { margin-top: auto; height: 360px; }
   .feature-card:last-child p { margin: 1.5rem auto 2rem; }
